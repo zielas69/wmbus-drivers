@@ -510,7 +510,7 @@ struct Driver
           i += 2;
           usage = bcd_2_int(telegram, i, 4);
           // in kWh
-          ret_val = usage / 36000.0;
+          ret_val = usage / 3600.0;
           ESP_LOGVV(TAG, "Found register '0C0B' with '%d'->'%f'", usage, ret_val.value());
           break;
         }
